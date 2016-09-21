@@ -13,4 +13,15 @@ bash install_atom.sh
 bash install_sdkman.sh
 # Install nodejs
 bash install_nodejs.sh
-
+# Install nvm (Node Version Manager)
+bash install_nvm.sh
+# Install Eclipse
+bash install_eclipse.sh
+# Install Intellij Idea
+bash install_idea.sh
+# Install Netbeans
+bash install_netbeans.sh
+# Install vagrant
+bash install_vagrant.sh
+# Install docker
+bash install_docker.sh

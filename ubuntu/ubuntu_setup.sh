@@ -20,3 +20,12 @@ sudo systemctl restart ssh
 
 # To automatically start your SSH server after reboot run
 sudo systemctl enable ssh
+
+# Install geany
+sudo apt install -y geany
+
+# Install gimp
+sudo apt install gimp
+
+# Install vlc player
+supo apt install vlc
