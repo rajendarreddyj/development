@@ -9,18 +9,22 @@ bash install_mysql.sh
 bash install_brackets.sh
 # Install atom
 bash install_atom.sh
-# Install sdkman
-bash install_sdkman.sh
 # Install nodejs
 bash install_nodejs.sh
 # Install nvm (Node Version Manager)
 bash install_nvm.sh
+# Install sdkman
+bash install_sdkman.sh
 # Install Eclipse
 bash install_eclipse.sh
 # Install Intellij Idea
 bash install_idea.sh
 # Install Netbeans
 bash install_netbeans.sh
+# Install dbeaver
+bash install_dbeaver.sh
+# Install virtualbox
+bash install_virtualbox.sh
 # Install vagrant
 bash install_vagrant.sh
 # Install docker
