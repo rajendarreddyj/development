@@ -5,14 +5,14 @@
 bash install_java.sh
 # Install mysql
 bash install_mysql.sh
-# Install brackets
-bash install_brackets.sh
 # Install atom
 bash install_atom.sh
-# Install nodejs
-bash install_nodejs.sh
+# Install brackets
+bash install_brackets.sh
 # Install nvm (Node Version Manager)
 bash install_nvm.sh
+# Install nodejs
+bash install_nodejs.sh
 # Install sdkman
 bash install_sdkman.sh
 # Install Eclipse
@@ -29,3 +29,13 @@ bash install_virtualbox.sh
 bash install_vagrant.sh
 # Install docker
 bash install_docker.sh
+# Install wine
+bash install_wine.sh
+# Install google apps
+bash install_googleapps.sh
+# Install getdebpkgs
+bash install_getdebpkgs.sh
+# Install libreoffice
+bash install_libreoffice.sh
+# Install wireshark
+bash install_wireshark.sh

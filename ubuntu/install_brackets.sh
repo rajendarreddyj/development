@@ -6,7 +6,7 @@ echo "Brackets Starting installation"
 
 echo "Intall Brackets dependency"
 # add-apt-repository dependency
-sudo apt -y install python3-software-properties
+sudo apt install -y python3-software-properties
 
 echo "Adding Brackets repository"
 # Add Brackets Repository
@@ -18,8 +18,6 @@ sudo apt update && sudo apt -y upgrade
 
 echo "Installing brackets"
 # Install brackets
-sudo apt -y install brackets
+sudo apt install -y brackets
 
-echo "atom Installation Done"
-
-echo "brackets Starting installation"
+echo "Brackets Installation Done"
