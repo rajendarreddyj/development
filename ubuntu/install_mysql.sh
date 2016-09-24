@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# http://www.mysql.com/
+
 # Variables
 DBPASSWD=toor
 

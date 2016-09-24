@@ -1,7 +1,4 @@
 #!/bin/bash
-#Will restart system
-#Modify these variables as needed...
-# Add Required Repositories
 
 # Update 
 sudo apt update && sudo apt -y upgrade

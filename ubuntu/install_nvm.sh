@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Node Version Manager
 # https://github.com/creationix/nvm
 # This script clones the nvm repository to ~/.nvm and adds the source line to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).

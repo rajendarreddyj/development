@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# http://sdkman.io/
+
 # Install sdkman
 curl -s http://get.sdkman.io | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"

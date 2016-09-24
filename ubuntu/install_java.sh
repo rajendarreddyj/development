@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# http://www.oracle.com/us/technologies/java/overview/index.html
+
 # add-apt-repository dependency
 sudo apt -y install python3-software-properties
 
