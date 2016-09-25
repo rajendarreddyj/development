@@ -30,11 +30,6 @@ sudo apt install -y clamav clamtk
 sudo freshclam
 echo "clamav/clamtk Installation Done"
 
-echo "Installing chromium"
-# Install Chromium Browser (http://www.chromium.org/)
-sudo apt install -y chromium-browser
-echo "chromium Installation Done"
-
 echo "Installing ssh"
 # Install SSH Server (http://www.openssh.com/)
 sudo apt install -y ssh
