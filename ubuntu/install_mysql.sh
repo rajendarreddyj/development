@@ -23,7 +23,7 @@ echo "Installing MySQL Server"
 sudo apt -y install mysql-server
 
 echo "Installing MySQL Workbench"
-sudo apt -y install mysql-server-workbench
+sudo apt -y install mysql-workbench
 
 sudo mv /etc/mysql/my.cnf /etc/mysql/my.cnf_backup
 sudo sed 's/bind-address/#bind-address/g' /etc/mysql/my.cnf_backup | sed 's/skip-external-locking/#skip-external-locking/g' > /etc/mysql/my.cnf
