@@ -38,7 +38,6 @@ echo "chromium Installation Done"
 echo "Installing ssh"
 # Install SSH Server (http://www.openssh.com/)
 sudo apt install -y ssh
-echo "ssh Installation Done"
 
 echo "restarting ssh"
 # Start SSH Service
@@ -47,6 +46,12 @@ sudo systemctl restart ssh
 echo "enabling ssh to restart on boot"
 # To automatically start your SSH server after reboot run
 sudo systemctl enable ssh
+echo "ssh Installation Done"
+
+echo "Installing putty"
+# Install putty (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+sudo apt install -y putty
+echo "putty Installation Done"
 
 echo "Installing geany"
 # Install geany (https://www.geany.org/)
