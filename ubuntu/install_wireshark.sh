@@ -8,9 +8,9 @@ echo "Intall wireshark dependency"
 # add-apt-repository dependency
 sudo apt install -y python3-software-properties
 
-echo "Adding wireshark repository"
+# echo "Adding wireshark repository"
 # Add wireshark Repository
-sudo add-apt-repository ppa:wireshark-dev/stable
+# sudo add-apt-repository ppa:wireshark-dev/stable
 
 echo "Updating packages"
 # Update your package manager & Upgrade.

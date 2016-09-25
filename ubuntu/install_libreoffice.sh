@@ -8,9 +8,9 @@ echo "Intall libreoffice dependency"
 # add-apt-repository dependency
 sudo apt install -y python3-software-properties
 
-echo "Adding libreoffice repository"
+# echo "Adding libreoffice repository"
 # Add libreoffice Repository
-sudo add-apt-repository ppa:libreoffice/ppa
+# sudo add-apt-repository ppa:libreoffice/ppa
 
 echo "Updating packages"
 # Update your package manager & Upgrade.

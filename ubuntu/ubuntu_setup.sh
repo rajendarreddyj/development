@@ -65,17 +65,17 @@ echo "gimp Installation Done"
 
 echo "Installing vlc"
 # Install vlc player (http://www.videolan.org/)
-supo apt install -y vlc
+sudo apt install -y vlc
 echo "vlc Installation Done"
 
 echo "Installing unison"
 # Install unison - file sync tool (https://www.cis.upenn.edu/~bcpierce/unison/)
-supo apt install -y unison
+sudo apt install -y unison
 echo "unison Installation Done"
 
 echo "Installing synaptic"
 # Install synaptic
-supo apt install -y synaptic
+sudo apt install -y synaptic
 echo "synaptic Installation Done"
 
 echo "Installing Archive Applications"
@@ -93,6 +93,11 @@ echo "Installing Torrent Software"
 sudo apt install -y deluge
 echo "Torrent Software Installation Done"
 
+echo "Installing shutter"
+# Install shutter(http://shutter-project.org/)
+sudo apt install -y shutter
+echo "shutter Installation Done"
+
 echo "Installing bleachbit Software"
 # Install bleachbit (http://www.bleachbit.org/)
 sudo apt install -y bleachbit
@@ -102,6 +107,11 @@ echo "Installing Thunderbird"
 # Install Thunderbird (https://www.mozilla.org/en-US/thunderbird/)
 sudo apt install -y thunderbird
 echo "Thunderbird Installation Done"
+
+echo "Installing Telugu fonts"
+# Install Telugu fonts
+sudo apt install -y fonts-telu-extra fonts-telu fonts-lohit-telu
+echo "Telugu fonts Installation Done"
 
 echo "Cleaning unneccessary packages"
 sudo apt -y autoremove 

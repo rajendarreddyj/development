@@ -31,10 +31,10 @@ bash install_vagrant.sh
 bash install_docker.sh
 # Install wine
 bash install_wine.sh
-# Install google apps
-bash install_googleapps.sh
-# Install getdebpkgs
-bash install_getdebpkgs.sh
+# Install getdeb filezilla
+bash install_getdeb_filezilla.sh
+# Install getdeb gcm
+bash install_getdeb_gcm.sh
 # Install libreoffice
 bash install_libreoffice.sh
 # Install wireshark
