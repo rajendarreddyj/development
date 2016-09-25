@@ -65,7 +65,7 @@ echo "vlc Installation Done"
 
 echo "Installing unison"
 # Install unison - file sync tool (https://www.cis.upenn.edu/~bcpierce/unison/)
-sudo apt install -y unison
+sudo apt install -y unison unison-gtk
 echo "unison Installation Done"
 
 echo "Installing synaptic"
