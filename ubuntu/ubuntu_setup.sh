@@ -73,6 +73,11 @@ echo "Installing synaptic"
 sudo apt install -y synaptic
 echo "synaptic Installation Done"
 
+echo "Installing dia"
+# Install dia
+sudo apt install -y dia
+echo "dia Installation Done"
+
 echo "Installing Archive Applications"
 # Install Archive Applications
 sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
