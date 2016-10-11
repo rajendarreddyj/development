@@ -24,6 +24,7 @@ echo "Configuring wireshark"
 # To aConfigure wireshark
 sudo groupadd wireshark
 sudo usermod -a -G wireshark $(whoami)
+sudo adduser $USER wireshark
 sudo chgrp wireshark /usr/bin/dumpcap
 sudo chmod 750 /usr/bin/dumpcap
 sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
