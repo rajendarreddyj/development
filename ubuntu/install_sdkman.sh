@@ -4,6 +4,9 @@
 
 echo "sdkman Starting installation"
 
+echo "Installing curl dependency"
+sudo apt install -y curl
+
 echo "Intalling sdkman"
 # Install sdkman
 curl -s http://get.sdkman.io | bash
