@@ -69,14 +69,19 @@ sudo apt install -y unison unison-gtk
 echo "unison Installation Done"
 
 echo "Installing synaptic"
-# Install synaptic
+# Install synaptic (http://www.nongnu.org/synaptic/)
 sudo apt install -y synaptic
 echo "synaptic Installation Done"
 
 echo "Installing dia"
-# Install dia
-sudo apt install -y dia
+# Install dia (https://wiki.gnome.org/Apps/Dia)
+sudo apt install -y dia dia-gnome
 echo "dia Installation Done"
+
+echo "Installing meld"
+# Install meld (http://meldmerge.org/)
+sudo apt install -y meld
+echo "meld Installation Done"
 
 echo "Installing Archive Applications"
 # Install Archive Applications
@@ -107,6 +112,16 @@ echo "Installing Thunderbird"
 # Install Thunderbird (https://www.mozilla.org/en-US/thunderbird/)
 sudo apt install -y thunderbird
 echo "Thunderbird Installation Done"
+
+echo "Installing filezilla"
+# Install filezilla (https://filezilla-project.org/)
+sudo apt install -y filezilla
+echo "filezilla Installation Done"
+
+echo "Installing vagrant"
+# Install vagrant (https://www.vagrantup.com/)
+sudo apt install -y vagrant
+echo "vagrant Installation Done"
 
 echo "Installing Telugu fonts"
 # Install Telugu fonts

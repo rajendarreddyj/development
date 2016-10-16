@@ -4,17 +4,14 @@
 
 echo "nodejs Starting installation"
 
+echo "Installing nodejs dependencies"
+# To compile and install native addons from npm you may also need to install build tools:
+sudo apt install -y build-essential curl
+
 echo "Adding nodejs repository"
 # Add nodejs Repository
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-echo "Updating packages"
-# Update your package manager & Upgrade.
-sudo apt update && sudo apt -y upgrade
-
-echo "Installing nodejs dependencies"
-# To compile and install native addons from npm you may also need to install build tools:
-sudo apt install -y build-essential
 
 echo "Installing nodejs"
 # Install node
