@@ -103,6 +103,11 @@ echo "Installing shutter"
 sudo apt install -y shutter
 echo "shutter Installation Done"
 
+echo "Installing openshot"
+# Install openshot(http://www.openshot.org/)
+sudo apt install -y openshot
+echo "shuopenshottter Installation Done"
+
 echo "Installing bleachbit Software"
 # Install bleachbit (http://www.bleachbit.org/)
 sudo apt install -y bleachbit
