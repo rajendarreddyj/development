@@ -1,2 +1,7 @@
-## development-setup
-My Ubuntu development Machine Setup
+# development
+
+* setup
+* cheatsheets
+* styleguide
+* vagrant
+* docker
