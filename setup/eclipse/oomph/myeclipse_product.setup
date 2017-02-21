@@ -401,10 +401,10 @@
     <description> This Eclipse installation provides cool stuff for Java Development with JBoss Tools </description>
   </version>
   <version name="dbeaverce" label="dbeaver Community Edition ( Neon - Eclipse Platform)" requiredJavaVersion="1.7">
-    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Community Edition (Mars)">
-      <requirement name="org.eclipse.platform.ide" versionRange="[4.5.0,4.6.0)" />
-      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.5.0,4.6.0)" />
-      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.5.0,4.6.0)" />
+    <setupTask xsi:type="setup.p2:P2Task" label="Eclipse Platform with dbeaver Community Edition (Neon)">
+      <requirement name="org.eclipse.platform.ide" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.platform.feature.group" versionRange="[4.6.0,4.7.0)" />
+      <requirement name="org.eclipse.rcp.feature.group" versionRange="[4.6.0,4.7.0)" />
       <requirement name="org.jkiss.dbeaver.core.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.db2.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.exasol.feature.feature.group" />
@@ -414,6 +414,7 @@
       <requirement name="org.jkiss.dbeaver.runtime.feature.feature.group" />
       <requirement name="org.jkiss.dbeaver.ext.wmi.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/mars/201602261000" />
+      <repository url="http://download.eclipse.org/releases/neon/201612211000" />
       <repository url="http://dbeaver.jkiss.org/update/latest/" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
