@@ -39,3 +39,5 @@ bash install_getdeb_gcm.sh
 bash install_libreoffice.sh
 # Install wireshark
 bash install_wireshark.sh
+# Install vscode
+bash install_code.sh
