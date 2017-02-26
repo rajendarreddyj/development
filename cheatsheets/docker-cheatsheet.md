@@ -1,9 +1,13 @@
 #Docker Cheatsheet
 A collection of useful Docker commands.
-* [Container Management](#container Management)
-* [Image management](#image management)
+* [Container Management](#container-management)
+* [Image management](#image-management)
 * [Status](#status)
-* [File System](#file System)
+* [File System](#file-system)
+* [SSH](#ssh)
+* [Pause](#pause)
+* [Repository/Docker Hub](#repositorydocker-hub)
+* [Meta](#meta)
 
 ##Container Management
 
