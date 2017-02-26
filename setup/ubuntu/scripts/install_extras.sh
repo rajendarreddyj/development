@@ -15,3 +15,11 @@ echo "localepurge Starting installation"
 # http://manpages.ubuntu.com/manpages/xenial/man8/localepurge.8.html
 sudo apt install -y localepurge
 echo "localepurge Installation Done"
+
+echo "libpadwalker-perl Starting installation"
+# Intall libpadwalker-perl
+# http://www.epic-ide.org/faq.php
+# https://code.activestate.com/ppm/PadWalker/
+# https://perlmaven.com/padwalker
+sudo apt install libpadwalker-perl
+echo "libpadwalker-perl Installation Done"
