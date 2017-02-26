@@ -1,5 +1,7 @@
-#Docker Cheatsheet
-A collection of useful Docker commands.
+docker-cheatsheet
+===================
+
+A cheatsheet on the usage of docker.
 * [Container Management](#container-management)
 * [Image management](#image-management)
 * [Status](#status)

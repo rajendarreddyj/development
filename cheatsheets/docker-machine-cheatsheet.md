@@ -1,2 +1,4 @@
-#Docker Machine Cheatsheet
-A collection of useful Docker Machine commands.
+docker-machine-cheatsheet
+===================
+
+A cheatsheet on the usage of docker-machine.

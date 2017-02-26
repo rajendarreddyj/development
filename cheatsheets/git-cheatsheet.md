@@ -1,7 +1,7 @@
 git-cheatsheet
 ===================
 
-A cheatsheet on the usage of git .
+A cheatsheet on the usage of git.
 
 * [Git Cheatsheet](#git-cheatsheet)
     * [Branches and checkout](#branches-and-checkout)
@@ -23,11 +23,9 @@ A cheatsheet on the usage of git .
       * [Local environment](#local-environment)
       * [Apache](#apache)
       * [Gitignore](#gitignore)
-      * [Aliases](#aliases)
    * [Tricks](#tricks)
       * [Ninja style push-pull](#ninja-style-push-pull)  
       * [Database schema hook](#database-schema-hook)
-
 
 
 ## Branches and checkout
@@ -363,31 +361,6 @@ PS1='${debian_chroot:[ ... ] \w\[\033[00m\]$(__git_ps1)\$ '
 ```
 Uncomment the line `force_color_prompt=yes` while you're at it.
 
-### Apache
-
-Remember to secure your git directory in the web server, Apache 2.4 in this case. Use apache2.conf for system wide effect. Might as well add some other stuff while you're at it:
-```sh
-# Block all hidden files (.gitignore for example)
-<FilesMatch "^\.">
-Require all denied
-</FilesMatch>
-
-# Block all hidden directories (.git for example)
-<DirectoryMatch "^(.*/)*\..*">
-Require all denied
-</DirectoryMatch>
-
-# Block requests filename~ formatted backup files
-<Files ~ "\~$">
-Require all denied
-</Files>
-
-# Block requests for misc extensions, (?i) is case insensitive
-<Files ~ "\.(?i)(inc|bak|orig|old|0|tmp?)$">
-Require all denied
-</Files>
-
-```
 
 ### Gitignore
 Some basic excludes, save as `.gitignore` in your repo root.

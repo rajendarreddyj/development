@@ -1,2 +1,4 @@
-#Ubuntu Cheatsheet
-A collection of useful Ubuntu commands.
+ubuntu-cheatsheet
+===================
+
+A cheatsheet on the usage of ubuntu.
