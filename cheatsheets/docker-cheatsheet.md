@@ -1,9 +1,9 @@
 #Docker Cheatsheet
 A collection of useful Docker commands.
-* [Container Management](#Container Management)
-* [Image management](#Image management)
-* [Status](#Status)
-* [File System](#File System)
+* [Container Management](#container Management)
+* [Image management](#image management)
+* [Status](#status)
+* [File System](#file System)
 
 ##Container Management
 
