@@ -66,3 +66,40 @@ A cheatsheet on the usage of docker.
 ##Meta
 * `docker info`      Display system-wide information
 * `docker version`   Show the Docker version information
+
+# Remove all containers
+docker rm -f $(docker ps -a -q)
+ 
+# Remove all images
+docker rmi -f $(docker images -q)
+ 
+# Remove all stopped containers.
+docker rm $(docker ps -a -q)
+ 
+# Remove all unused images.
+docker rmi $(docker images -q)
+ 
+# Remove all untagged images
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+
+#docker-compose start/stop
+docker-compose up
+docker-compose stop
+#create docker container with name
+docker run --name yil-mysql-5.6 --env="MYSQL_ROOT_PASSWORD=password" -v /yilazius/var/lib/mysql:/var/lib/mysql -p 3306:3306 -d mysql/mysql-server:5.6
+#start/stop by _name_ or _container id_
+docker start mysql-5.6
+docker stop mysql-5.6
+ 
+#list running docker container
+docker ps
+#list all (including suspended) docker container
+docker ps -a
+ 
+#access log files of container
+docker logs mysql-5.6
+docker logs -f mysql-5.6
+#inspect docker container
+docker inspect mysql-5.6 | grep IP 
+#ssh into docker container
+docker exec -it mysql-5.6 bash
