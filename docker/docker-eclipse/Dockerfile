@@ -15,14 +15,15 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list && \
 # the netbeans image
 RUN apt-get update && apt-get install -y libgtk2.0-0 libcanberra-gtk-module
 
-RUN wget http://eclipse.mirror.rafal.ca/technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
+RUN wget http://mirror.cc.columbia.edu/pub/software/eclipse/technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
     echo 'Installing eclipse' && \
     tar -xf /tmp/eclipse.tar.gz -C /opt && \
     rm /tmp/eclipse.tar.gz
 
-ADD run /opt/bin/eclipse
+# Install sudo
+RUN apt-get install -y sudo
 
-RUN chmod +x //opt/bin/eclipse && \
+RUN chmod +x //opt/eclipse/eclipse && \
     mkdir -p /home/developer && \
     echo "developer:x:1000:1000:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
     echo "developer:x:1000:" >> /etc/group && \
@@ -34,4 +35,4 @@ RUN chmod +x //opt/bin/eclipse && \
 USER developer
 ENV HOME /home/developer
 WORKDIR /home/developer
-CMD /opt/eclipse
+CMD /opt/eclipse/eclipse -clean &
