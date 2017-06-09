@@ -15,7 +15,7 @@
     <requirement name="org.eclipse.oomph.setup.feature.group" />
     <repository url="${oomph.update.url}" />
     <repository url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site" />
-    <repository url="http://opensource.cpupk.com/decompiler/update/" />
+    <repository url="http://raw.githubusercontent.com/cnfree/eclipse/master/decompiler/update/" />
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Doomph.setup" value="=true" vm="true" />
   <setupTask xsi:type="setup:EclipseIniTask" option="--launcher.GTK_version" value="2">
