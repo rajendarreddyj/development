@@ -16,6 +16,7 @@
     <repository url="${oomph.update.url}" />
     <repository url="https://raw.githubusercontent.com/rajendarreddyj/eclipse-weblogic-plugin/master/docs/update-site" />
     <repository url="https://raw.githubusercontent.com/cnfree/eclipse/master/decompiler/update/" />
+    <repository url="http://update.eclemma.org/" />
   </setupTask>
   <setupTask xsi:type="setup:EclipseIniTask" option="-Doomph.setup" value="=true" vm="true" />
   <setupTask xsi:type="setup:EclipseIniTask" option="--launcher.GTK_version" value="2">
@@ -100,13 +101,14 @@
       <requirement name="com.rajendarreddyj.eclipse.plugins.weblogic.feature.feature.group" />
       <requirement name="org.sf.feeling.decompiler.feature.group" />
       <requirement name="org.eclipse.buildship.feature.group" />
+      <requirement name="org.eclipse.eclemma.feature.feature.group" />
       <repository url="http://download.eclipse.org/releases/oxygen/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
       <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
-    <description>Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
+    <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
       EE, JPA, JSF, Mylyn, EGit and others.
     </description>
   </version>
@@ -175,7 +177,7 @@
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
       <repository url="http://download.eclipse.org/releases/oxygen/" />
     </setupTask>
-    <description>The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
+    <description> The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages
       support, Git client, and Mylyn.
     </description>
   </version>
@@ -234,7 +236,7 @@
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen" />
       <repository url="http://download.eclipse.org/releases/oxygen/" />
     </setupTask>
-    <description>Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that
+    <description> Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that
       also have reporting needs.
     </description>
   </version>
