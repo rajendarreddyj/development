@@ -164,7 +164,6 @@
       <requirement name="org.eclipse.mylyn.wikitext_feature.feature.group" />
       <requirement name="org.eclipse.mylyn_feature.feature.group" />
       <requirement name="org.eclipse.rse.feature.group" />
-      <requirement name="org.eclipse.thym.feature.feature.group" />
       <requirement name="org.eclipse.tm.terminal.feature.feature.group" />
       <requirement name="org.eclipse.wst.jsdt.chromium.debug.feature.feature.group" />
       <requirement name="org.eclipse.wst.jsdt.feature.feature.group" />
