@@ -498,6 +498,24 @@
       <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
     </setupTask>
   </version>
+  <version name="apacheDirectoryStudio" label="Apache Directory Studio" requiredJavaVersion="1.8">
+    <setupTask xsi:type="setup.p2:P2Task" label="Apache Directory Studio">
+      <requirement name="org.eclipse.platform.ide" />
+      <requirement name="org.eclipse.platform.feature.group" />
+      <requirement name="org.eclipse.rcp.feature.group" />
+      <requirement name="org.eclipse.equinox.p2.rcp.feature.feature.group" />
+      <requirement name="org.eclipse.epp.mpc.feature.group" />
+      <requirement name="org.apache.directory.studio.apacheds.feature.feature.group" />
+      <requirement name="org.apache.directory.studio.ldapbrowser.feature.feature.group" />
+      <requirement name="org.apache.directory.studio.ldifeditor.feature.feature.group" />
+      <requirement name="org.apache.directory.studio.schemaeditor.feature.feature.group" />
+      <repository url="http://download.eclipse.org/releases/oxygen/" />
+      <repository url="http://directory.apache.org/studio/update/" />
+    </setupTask>
+    <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="512m" vm="true">
+      <description> Set the heap space needed to work with the projects of ${scope.product.label}</description>
+    </setupTask>
+  </version>
   <version name="pydev" label="Pydev (pydev IDE for python/jython Developers)" requiredJavaVersion="1.8">
     <setupTask xsi:type="setup.p2:P2Task" label="Eclipse IDE for Java Devlopers with pydev Tools">
       <requirement name="epp.package.java" />
