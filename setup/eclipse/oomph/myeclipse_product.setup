@@ -105,7 +105,7 @@
       <repository url="http://download.eclipse.org/releases/oxygen/" />
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <description> Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java
@@ -336,7 +336,7 @@
       <repository url="http://download.eclipse.org/releases/oxygen" />
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
     </setupTask>
     <setupTask xsi:type="setup:EclipseIniTask" option="-Xmx" value="2048m" vm="true">
@@ -441,7 +441,7 @@
       <repository url="http://download.eclipse.org/releases/oxygen" />
       <repository url="http://download.eclipse.org/technology/epp/packages/oxygen/" />
       <repository url="http://community.polarion.com/projects/subversive/download/eclipse/6.0/update-site/" />
-      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.6/" />
+      <repository url="http://dist.springsource.com/release/TOOLS/update/e4.7/" />
       <repository url="http://download.eclipse.org/buildship/updates/e46/releases" />
       <repository url="https://devstudio.redhat.com/10.0/stable/updates/" />
     </setupTask>
