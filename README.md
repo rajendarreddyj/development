@@ -5,5 +5,3 @@ This Repository contains below resources to start application development.
 * [setup](setup)
 * [cheatsheets](cheatsheets)
 * [styleguide](setup/eclipse/styleguide)
-* [vagrant](vagrant)
-* [docker](docker)
