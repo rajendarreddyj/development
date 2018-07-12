@@ -4,12 +4,12 @@ windows-cheatsheet
 A cheatsheet on the usage of windows.
 
 # Adding Keys and Values:
-# Add a key to the registry on machine [TargetIPaddr] within the registry domain [RegDomain] to location [Key]. If no remote machine is specified, the current machine is assumed.
+### Add a key to the registry on machine [TargetIPaddr] within the registry domain [RegDomain] to location [Key]. If no remote machine is specified, the current machine is assumed.
 ```sh
 C:\>reg add [\\TargetIPaddr\][RegDomain]\[Key]
 ```
 # Export and Import:
-# Import and export can only be done from or to the local machine.
+### Import and export can only be done from or to the local machine.
 # Export all subkeys and values located in the domain [RegDomain] under the location [Key] to the file [FileName]
 ```sh
 C:\>reg export [RegDomain]\[Key] [FileName]
@@ -19,7 +19,7 @@ C:\>reg export [RegDomain]\[Key] [FileName]
 C:\>reg import [FileName]
 ```
 # Query for a specific Value of a Key:
-# Query a key on machine [TargetIPaddr] within the registry domain [RegDomain] in location [Key] and get the specific value [ValueName] under that key.  Add /s to recurse all values.
+### Query a key on machine [TargetIPaddr] within the registry domain [RegDomain] in location [Key] and get the specific value [ValueName] under that key.  Add /s to recurse all values.
 ```sh
 C:\>reg query [\\TargetIPaddr\][RegDomain]\[Key] /v [ValueName]
 ```
@@ -78,7 +78,7 @@ C:\>netstat –s  –p [tcp|udp|ip|icmp]
 C:\>dir /b /s [Directory]\[FileName]
 ```
 # Count the number of lines on StandardOuy of [Command]:
-# Finds the count (/c) of lines that do not contain (/v) nothing ("").  Lines that do not have nothing are all lines, even blank lines, which contain CR/LF
+### Finds the count (/c) of lines that do not contain (/v) nothing ("").  Lines that do not have nothing are all lines, even blank lines, which contain CR/LF
 ```sh
 C:\>[Command] | find /c /v ""
 ```
