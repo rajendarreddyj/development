@@ -207,3 +207,6 @@ A; B    Run A and then B, regardless of success of A
 A && B  Run B if A succeeded
 A || B  Run B if A failed
 A &     Run A in background.
+
+# No of files open per process
+ps aux | sed 1d | awk '{print "fd_count=$(lsof -p " $2 " | wc -l) && echo " $2 " $fd_count"}' | xargs -I {} bash -c {}
