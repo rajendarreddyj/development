@@ -433,20 +433,25 @@ git add $db_outdir/*
 ## Dump database schema DONE
 ```
 # adding and committing
+```
 git add -A                        # stages All
 git add .                         # stages new and modified, without deleted
 git add -u                        # stages modified and deleted, without new
 git commit --amend                # Add staged changes to previous commit. Do not use if commit has been pushed.
 git commit --amend --no-edit      # Do so without having to edit the commit message.
- 
+```
+
 # remotes - pushing, pulling, and tracking
+```
 git fetch                         # gets remote objects and refs. Needed if new branches were added on the remote.
 git remote -v                     # Lists all remotes (verbose)
 git pull origin master            # Pulls commits from the 'origin' remote's master branch and stores them in the local repo
 git push -u origin master         # sets ups tracking so that you can 'git push' without extra args
 git show :/^Merge                 # show the last commit whose message matches a regex
- 
+```
+
 # branches - creating, checking out, and merging
+```
 git branch                        # list branches
 git branch -a                     # list branches including remotes
 git branch <MYBRANCH>             # Creates a new branch called "MYBRANCH"
@@ -456,8 +461,10 @@ git branch -d <MYBRANCH>          # delete a local branch
 git branch -m <MYBRANCH>          # rename the current branch
 git checkout --track origin/<MYBRANCH>      # create a new local branch with the same name as the remote and set "upstream" configuration
 git merge <MYBRANCH>           # merge the commits from the given branch into the current branch
- 
+```
+
 # tagging
+```
 git tag                           # list available tags
 git tag -l v1.4.2.*               # search for specific tags
 git tag -a v1.4 -m 'version 1.4'  # create an annotated tag
@@ -466,13 +473,17 @@ git show v1.4                     # show the tag data of a specific tag
 git tag v1.4                      # create a lightweight tag
 git push --tag                    # you have to explicitly push tags to remotes
 git log --date-order --graph --tags --simplify-by-decoration --pretty=format:'%ai %h %d' # show tags with creation dates
- 
+```
+
 # diff
+```
 git diff --word-diff
 git diff --staged                 # show the changes that have been staged
 git diff 0c6de32 HEAD             # compare the current commit to a previous commit
- 
+```
+
 # reset
+```
 git reset <FILE_OR_DIRECTORY>     # unstage
 git checkout -- <FILE>            # throw away local modifications and reset to last committed version of given file
 git checkout 0c6de32              # browse a previous commit in detached HEAD state. git checkout master to reattach.
@@ -484,22 +495,28 @@ git revert HEAD                   # Make a commit that undoes the last commit. U
  
 git rm FILE                       # Remove a file from the index
 git rm -r FOLDER                  # Remove a folder from the index
+```
 # *these are useful if you forgot to create a .gitignore before adding files*
  
 # checkout prev (older) revision
+```
 git_prev() {
     git checkout HEAD~
 }
+```
  
 # checkout next (newer) commit
+```
 git_next() {
     BRANCH=`git show-ref | grep $(git show-ref -s -- HEAD) | sed 's|.*/\(.*\)|\1|' | grep -v HEAD | sort | uniq`
     HASH=`git rev-parse $BRANCH`
     PREV=`git rev-list --topo-order HEAD..$HASH | tail -1`
     git checkout $PREV
 }
- 
+```
+
 # create a new repo from a directory in an old repo, preserving history
+```
 git clone <old repo>
 cd <old repo>
 git remote rm origin
@@ -508,8 +525,11 @@ cd <new repo>
 curl -u '<username>' https://api.github.com/user/repos -d '{"name":"<new repo>"}'
 git remote add origin <new repo>
 git push origin master
- 
+``` 
+
 # display branches sorted by date
+```
 git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate) %(authorname) %(refname:short)'
+```
  
 # Other Awesomeness: http://hub.github.com
