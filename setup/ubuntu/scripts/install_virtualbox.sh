@@ -11,7 +11,7 @@ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key a
 
 echo "Adding virtualbox Repository"
 # Add the Docker repository to APT sources
-sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" > /etc/apt/sources.list.d/virtualbox.list'
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" > /etc/apt/sources.list.d/virtualbox.list'
 
 echo "Updating packages"
 # Update your package manager & Upgrade.
@@ -21,15 +21,9 @@ echo "Installing dkms"
 # Install the dkms package to ensure that the VirtualBox host kernel modules (vboxdrv, vboxnetflt and vboxnetadp) are properly updated if the linux kernel version changes
 sudo apt install -y dkms
 
-echo "Installing dependencies"
-# Install libpng12-0_1.2.50-2+deb8u2_amd64.deb
-#wget http://http.us.debian.org/debian/pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u2_amd64.deb
-#sudo dpkg -i libpng12-0_1.2.50-2+deb8u2_amd64.deb
-#rm libpng12-0_1.2.50-2+deb8u2_amd64.deb
-
 echo "Installing virtualbox"
 # Install virtualbox
-sudo apt install -y virtualbox-5.1
+sudo apt install -y virtualbox-6.1
 
 echo "Adding users to vboxusers"
 # To access USB devices from VirtualBox guests, add users to vboxusers
