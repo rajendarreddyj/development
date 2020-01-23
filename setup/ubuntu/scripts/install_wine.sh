@@ -1,23 +1,22 @@
 #!/bin/bash
 
-# https://www.winehq.org/
+# https://wiki.winehq.org/Ubuntu
 
-echo "Brackets Starting installation"
+echo "Wine HQ Starting installation"
 
-echo "Intall wine dependency"
-# add-apt-repository dependency
-sudo apt -y install python3-software-properties
+echo "enable 32 bit architectur"
+sudo dpkg --add-architecture i386 
 
-echo "Intall wine dependency"
+echo "Add Wine Repository"
 # Add Wine Repository
-sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo apt-add-repository -y "deb https://dl.winehq.org/wine-builds/ubuntu/ $(lsb_release -cs) main"
 
 echo "Updating packages"
 # Update 
 sudo apt update && sudo apt -y upgrade
 
-echo "Installing wine"
+echo "Installing Wine HQ"
 #install atom
-sudo apt install -y wine1.8
+sudo apt install --install-recommends winehq-stable
 
-echo "wine Installation Done"
+echo "Wine HQ Installation Done"
