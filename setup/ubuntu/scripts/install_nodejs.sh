@@ -10,7 +10,7 @@ sudo apt install -y build-essential curl
 
 echo "Adding nodejs repository"
 # Add nodejs Repository
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
 
 echo "Installing nodejs"
