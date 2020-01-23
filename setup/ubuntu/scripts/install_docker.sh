@@ -22,10 +22,11 @@ sudo apt-key fingerprint 0EBFCD88
 
 echo "Adding docker-engine Repository"
 # Add the Docker repository to APT sources
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+#sudo add-apt-repository \
+#   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+#   $(lsb_release -cs) \
+#   stable"
+sudo sh -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list'   
    
 echo "Updating packages"
 # Update your package manager & Upgrade.
