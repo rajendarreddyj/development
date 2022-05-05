@@ -29,8 +29,11 @@ address=7777
 Put the JAR in <JDK>/jre/lib/ext
  
 // JAR Tool
+
+```sh
 jar [actionoptions] [Manifest] <filename> input1 [input2]
- 
+```
+
 // Actionoptions
 c: Create a JAR out of the resources specified in input1, input2 etc. Resources are files and directories
 t: Show the content of the archive in the console (Table of contents)
